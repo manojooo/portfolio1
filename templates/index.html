@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/m.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balistika+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider">
+                        <div class="slider-icons">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    
+                    <div class="signature-container">
+                        <svg class="signature-svg" viewBox="0 0 500 100">
+                            <path class="signature-path" d="M10,50 C50,20 90,20 130,50..." /> <!-- Path data would need to match your signature -->
+                        </svg>
+                    <h1 class="name">𝓜𝓪𝓷𝓸𝓳𝓚𝓾𝓶𝓪𝓻 𝓟𝓮𝓻𝓾𝓶𝓪𝓵𝓵𝓪</h1>
+                    </div>
+                    <div class="typing-text">
+                        <span class="static-text">I'm a</span>
+                        <span class="dynamic-text"></span>
+                    </div>
+                    <p class="home-description">
+                        𝗔 𝗣𝗔𝗦𝗦𝗜𝗢𝗡𝗔𝗧𝗘 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 𝗙𝗢𝗖𝗨𝗦𝗘𝗗 𝗢𝗡 𝗖𝗥𝗘𝗔𝗧𝗜𝗡𝗚 𝗜𝗡𝗧𝗘𝗥𝗔𝗖𝗧𝗜𝗩𝗘 𝗔𝗡𝗗 𝗨𝗦𝗘𝗥-𝗙𝗥𝗜𝗗𝗟𝗬 𝗔𝗣𝗣𝗟𝗜𝗖𝗔𝗧𝗜𝗢𝗡𝗦𝐒
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#contact" class="primary-btn">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="secondary-btn">
+                            <span>View Work</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="image-container">
+                        <div class="image-wrapper">
+                            <img src="{{ url_for('static', filename='img/pp.jpg') }}" alt="Your Name - Profile Picture 1" class="profile-img active">
+                            <img src="{{ url_for('static', filename='img/pp2.jpg') }}" alt="Your Name - Profile Picture 2" class="profile-img">
+                        </div>
+                        <div class="image-border"></div>
+                        <div class="accent-dots"></div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="" target="_blank" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-description">
+            I AM A PASSIONATE WEB DEVELOPER WITH EXTENSIVE EXPERIENCE IN CREATING BEAUTIFUL & FUNCTIONAL WEBSITES.
+MY EXPERTISE INCLUDES BOTH FRONTEND & BACKEND DEVELOPMENT, WITH A STRONG FOCUS ON USER EXPERIENCE & MODERN DESIGN PRINCIPLES.
+ I TAKE PRIDE IN WRITING CLEAN, EFFICIENT CODE & STAYING UP-TO-DATE WITH THE LATEST WEB TECHNOLOGIES & BEST PRACTICES! 
+
+
+            </p>
+            
+            <div class="about-grid">
+                <!-- Skills Column -->
+                        
+                        <div class="about-sections">
+                            <!-- Skills Section -->
+                            <div class="skills-container">
+                                <h3>My Skills</h3>
+                                <div class="skills-categories">
+                                    <!-- Frontend Skills -->
+                                    <div class="skill-category">
+                                        <div class="category-header">
+                                            <i class="fas fa-code"></i>
+                                            <h4>Frontend</h4>
+                                        </div>
+                                        <div class="skills-list">
+                                            <div class="skill-item" data-percent="90">
+                                                <i class="fab fa-html5"></i>
+                                                <span class="skill-name">HTML5</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">90%</span>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item" data-percent="85">
+                                                <i class="fab fa-css3-alt"></i>
+                                                <span class="skill-name">CSS3</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">85%</span>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item" data-percent="80">
+                                                <i class="fab fa-js"></i>
+                                                <span class="skill-name">JavaScript</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">80%</span>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item" data-percent="75">
+                                                <i class="fab fa-react"></i>
+                                                <span class="skill-name">React</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">75%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Backend Skills -->
+                                    <div class="skill-category">
+                                        <div class="category-header">
+                                            <i class="fas fa-server"></i>
+                                            <h4>Backend</h4>
+                                        </div>
+                                        <div class="skills-list">
+                                            <div class="skill-item" data-percent="85">
+                                                <i class="fab fa-python"></i>
+                                                <span class="skill-name">Python</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">85%</span>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item" data-percent="80">
+                                                <i class="fab fa-java"></i>
+                                                <span class="skill-name">Java</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">80%</span>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item" data-percent="75">
+                                                <i class="fas fa-code-branch"></i>
+                                                <span class="skill-name">Data Structures</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">75%</span>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item" data-percent="85">
+                                                <i class="fas fa-database"></i>
+                                                <span class="skill-name">SQL</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Data Visualization -->
+                                    <div class="skill-category">
+                                        <div class="category-header">
+                                            <i class="fas fa-chart-bar"></i>
+                                            <h4>Data Visualization</h4>
+                                        </div>
+                                        <div class="skills-list">
+                                            <div class="skill-item" data-percent="85">
+                                                <i class="fas fa-chart-pie"></i>
+                                                <span class="skill-name">Tableau</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">85%</span>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item" data-percent="80">
+                                                <i class="fas fa-chart-line"></i>
+                                                <span class="skill-name">Power BI</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">80%</span>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item" data-percent="90">
+                                                <i class="fas fa-table"></i>
+                                                <span class="skill-name">Excel</span>
+                                                <div class="skill-percent">
+                                                    <div class="percent-bar">
+                                                        <div class="percent-fill"></div>
+                                                    </div>
+                                                    <span class="percent-number">90%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+
+                <!-- Education Column -->
+                <div class="education-section">
+                    <h3>Education</h3>
+                    <div class="education-cards">
+                        <div class="edu-card">
+                            <div class="edu-card-inner">
+                                <div class="edu-card-front">
+                                    <i class="fas fa-school"></i>
+                                    <h4>High School</h4>
+                                    <p>Kurapati Chandhra Sekhar Rao English Medium High School</p>
+                                    <span class="year">2019 - 2020</span>
+                                </div>
+                                <div class="edu-card-back">
+                                    <h4>Academic Performance</h4>
+                                    <div class="marks-info">
+                                        <div class="percentage">
+                                            <span class="number">97%</span>
+                                            <span class="label">Percentage</span>
+                                        </div>
+                                        <div class="grade">
+                                            <span class="number">A+</span>
+                                            <span class="label">Grade</span>
+                                        </div>
+                                    </div>
+                                    <p class="achievements">State Board First Class with Distinction</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-card-inner">
+                                <div class="edu-card-front">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h4>Intermediate</h4>
+                                    <p>Kakarapati Bhavanarayana College</p>
+                                    <span class="year">2020 - 2022</span>
+                                </div>
+                                <div class="edu-card-back">
+                                    <h4>Academic Performance</h4>
+                                    <div class="marks-info">
+                                        <div class="percentage">
+                                            <span class="number">56%</span>
+                                            <span class="label">Percentage</span>
+                                        </div>
+                                        <div class="grade">
+                                            <span class="number">B</span>
+                                            <span class="label">Grade</span>
+                                        </div>
+                                    </div>
+                                    <p class="achievements">State Board First Class with Distinction</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-card-inner">
+                                <div class="edu-card-front">
+                                    <i class="fas fa-university"></i>
+                                    <h4>Bachelor of Technology</h4>
+                                    <p>Krishna University</p>
+                                    <span class="year">2022 - 2025</span>
+                                </div>
+                                <div class="edu-card-back">
+                                    <h4>Academic Performance</h4>
+                                    <div class="marks-info">
+                                        <div class="percentage">
+                                            <span class="number">7.50</span>
+                                            <span class="label">CGPA</span>
+                                        </div>
+                                        <div class="grade">
+                                            <span class="number">B</span>
+                                            <span class="label">Grade</span>
+                                        </div>
+                                    </div>
+                                    <p class="achievements">Computer Science & Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <!-- Skills section content -->
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <!-- Education section content -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyrswrh39p2w1iLf0ABM06r3aGNF5eOgde5A&s" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>aikitchen_chatbot</h3>
+                        <div class="project-tags">
+                            <span>Html</span>
+                            <span>CSS</span>
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+                    <!-- Hover information -->
+                    <div class="project-hover-info">
+                        <div class="info-line">
+                            <p>In a modern hotel dining experience, the traditional role of a waiter is seamlessly replaced by an advanced AI-powered chatbot. This intelligent system takes orders, suggests menu items based on customer preferences, and provides real-time updates on dish availability. Guests can interact with the chatbot through a tablet or mobile app, receiving personalized recommendations and instant responses to their queries. The AI also handles special requests.</p>
+                        </div>
+                        <div class="action-line">
+                            <div class="action-links">
+                                <a href="#" class="action-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://manojooo.github.io/aikitchen_chatbot/" class="action-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://indiafacts.org/wp-content/uploads/2019/01/Sv%C4%81dhy%C4%81ya-13-Bhagavad-Gita-900x500.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>BhagavadhGita</h3>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <!-- Hover information -->
+                    <div class="project-hover-info">
+                        <div class="info-line">
+                            <p>A visually engaging 9x9 photo grid that showcases a collection of images. Each image in the grid is interactive—when clicked, it seamlessly redirects users to its respective content page. This feature enhances navigation, making it easy to explore detailed information related to each image. Perfect for portfolios, galleries, or content-rich websites!
+                            </p>
+                        </div>
+                        <div class="action-line">
+                            <div class="action-links">
+                                <a href="#" class="action-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://manojooo.github.io/bhagavadhgitachapters/" class="action-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://img.freepik.com/premium-photo/online-application-form-modish-registration-internet-website_31965-221848.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Job Application</h3>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JAVA SCRIPT</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-info">
+                        <div class="info-line">
+                            <p>A well-designed job application form that collects all the essential information required for applying to a job. The form includes the following fields: Personal Information,Job Details
+                                ,Education Background,Skills & Certifications,Resume Upload</p>
+                        </div>
+                        <div class="action-line">
+                            <div class="action-links">
+                                <a href="#" class="action-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://manojooo.github.io/Jobapplication/" class="action-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://media.licdn.com/dms/image/D4D12AQHUESY4_S3_hA/article-cover_image-shrink_720_1280/0/1711927722405?e=2147483647&v=beta&t=b_6nniQEnlOeGEw53vEsod4T0v2Io-K72DHlyK1dzsg" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mathematic Calculator</h3>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-info">
+                        <div class="info-line">
+                            <p>A user-friendly Mathematical Calculator designed to perform all essential arithmetic operations with precision and ease. This calculator allows users to quickly compute values using a clean and responsive interface.
+                                Basic Arithmetic Operations: Addition (+), Subtraction (-), Multiplication (*), and Division (/)
+Advanced Functions: Square, Square Root, Percentage, and Modulus (%)
+Real-time Input & Output: Instant calculation display without page reloads</p>
+                        </div>
+                        <div class="action-line">
+                            <div class="action-links">
+                                <a href="#" class="action-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://manojooo.github.io/calculator/" class="action-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://static.wixstatic.com/media/f6dde7_54e05348d96a47bba2c9cc69abf55243~mv2.jpg/v1/fill/w_1000,h_617,al_c,q_85,usm_0.66_1.00_0.01/f6dde7_54e05348d96a47bba2c9cc69abf55243~mv2.jpg" alt="Project 5">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-info">
+                        <div class="info-line">
+                            <p>A sleek and user-friendly E-Commerce Page designed for effortless shopping. This page features allowing users to add and remove items seamlessly.Key Features:
+Add to Cart – Clicking the "Add to Cart" button adds the selected product to the shopping cart.
+Remove from Cart – Users can remove individual items from the cart with a single click.
+Cart Summary – Displays selected products, total quantity, and total price dynamically.
+Real-time Updates – The cart updates instantly as products are added or removed.</p>
+                        </div>
+                        <div class="action-line">
+                            <div class="action-links">
+                                <a href="#" class="action-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="action-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHjPX-GKYEX9yXi4ySoXIjTKiX2xBMrfwbQ&s" alt="Project 6">
+                    </div>
+                    <div class="project-info">
+                        <h3>Ticket Booking Application</h3>
+                        <div class="project-tags">
+                            <span>Angular</span>
+                            <span>Firebase</span>
+                            <span>Material UI</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-info">
+                        <div class="info-line">
+                            <p>This ticket booking application simplifies the process of reserving tickets for various events,from movies.Users can browse available events,filter by date,time, and location, and view seating or class availability. The app provides detailed information about each event, including descriptions, schedules, and pricing. A secure payment gateway allows for quick and easy transactions using various payment methods.Once booked, users receive confirmation with ticket details and QR codes for seamless entry</p>
+                        </div>
+                        <div class="action-line">
+                            <div class="action-links">
+                                <a href="#" class="action-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="action-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="certificate-image">
+                        <img src="https://www.topuniversities.com/sites/default/files/styles/campus/public/profiles-slideshow/294502/thumbnail_Header%20image%20TU%20Delft-1738055470.jpg.webp" alt="Certificate 1">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Applying AI</h3>
+                        <p class="issuer">Issued by: Delft X</p>
+                        <p class="date">Date:19 June 2024</p>
+                        <a href="https://drive.google.com/file/d/1DhOcL2URfgPp81iXAnrHdYKhdPm3R8-2/view?usp=drive_link" class="view-certificate">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="certificate-image">
+                        <img src="https://static.toiimg.com/thumb/msid-111036946,width-400,resizemode-4/111036946.jpg" alt="Certificate 2">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Soft Skhils</h3>
+                        <p class="issuer">Issued by: TCS</p>
+                        <p class="date">Date:30 October 2023</p>
+                        <a href="https://drive.google.com/file/d/1Pw-LhYEpQZMPCE6VcjFZ1iXc7f1Jnsh8/view?usp=drive_link" class="view-certificate">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="certificate-image">
+                        <img src="https://thetechportal.com/wp-content/uploads/2022/01/msft-logo-building_0-703x430.jpg" alt="Certificate 3">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Azure Ai</h3>
+                        <p class="issuer">Issued by: microsoft</p>
+                        <p class="date">Date:  2025</p>
+                        <a href="#" class="view-certificate">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>manojkumarperumalla0613@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>9381371955</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Vijayawada, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="{{ url_for('submit_contact') }}" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/m.js') }}"></script>
+</body>
+</html>
